@@ -22,3 +22,4 @@ Admin or defunct apps:
 
 [mnc_python](https://ovro-lwa.github.io/mnc_python) |
 [lwa-antpos](https://ovro-lwa.github.io/lwa-antpos) |
+[calim-ops](https://github.com/ovro-lwa/calim-ops/wiki) |
