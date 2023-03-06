@@ -20,6 +20,7 @@ Admin or defunct apps:
 
 ## Documentation
 
-[mnc_python](https://ovro-lwa.github.io/mnc_python) |
 [lwa-antpos](https://ovro-lwa.github.io/lwa-antpos) |
-[calim-ops](https://github.com/ovro-lwa/calim-ops/wiki) |
+[mnc_python](https://ovro-lwa.github.io/mnc_python) |
+[calim-ops wiki](https://github.com/ovro-lwa/calim-ops/wiki) |
+[ovro-data-recorder](https://ovro-data-recorder.readthedocs.io/en/latest/) |
