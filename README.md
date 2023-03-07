@@ -1,4 +1,4 @@
-# ovro-lwa.github.io
+# OVRO-LWA landing page
 
 A landing page for OVRO-LWA web services and docs. Services are available behind gateway server and require ssh tunneling for access.
 
