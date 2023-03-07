@@ -1,11 +1,5 @@
 # ovro-lwa.github.io
 
-Simple landing page for OVRO-LWA web services and docs.
+A landing page for OVRO-LWA web services and docs. Services are available behind gateway server and require ssh tunneling for access.
 
-To use apps, set up ssh tunnel to:
-- lwacr:5006
-- lwacr:5007
-- lwamaas:9090
-- lwamaas:3000
-
-LWASNAP service is hosted on github.
+This repo holds links to public documentation via sharethedocs, github wikis, or static content in this repo itself.
