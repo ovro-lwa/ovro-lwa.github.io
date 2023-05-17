@@ -10,7 +10,7 @@ Operations and M&C apps:
 [Grafana](http://localhost:3000) (grafana:3000) |
 [System Health Dashboard](http://localhost:5006/LWA_dashboard) (lwacalim10:5006) |
 [Low-Freq Sky](http://localhost:8081) (lwacalimhead:8081) |
-[Logs](http://localhost:5601) (lwacalim10:5601) |
+[Logs](http://localhost:5601/app/discover) (lwacalim10:5601) |
 
 Admin or defunct apps:
 
