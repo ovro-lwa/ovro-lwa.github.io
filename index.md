@@ -9,13 +9,12 @@ Operations and M&C apps:
 [Web UI](http://localhost:9090) (webserveruiservice:9090) |
 [Grafana](http://localhost:3000) (grafana:3000) |
 [System Health Dashboard](http://localhost:5006/LWA_dashboard) (lwacalim10:5006) |
-[Low-Freq Sky](http://localhost:8081) (lwacalimhead:8081) |
+[Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 [Logs](http://localhost:5601/app/discover) (lwacalim10:5601) |
 
 Admin or defunct apps:
 
 [MAAS](http://localhost:5240) (lxdlwamaas:5240) |
-[Antenna Mapping](http://127.0.0.1:5007/?hip.load_uri=%22.%22&hip.filters=%5B%5D&hip.color_by=%22antnum%22&hip.PARALLEL_PLOT.order=%5B%22antnum%22%2C%22pola_fee%22%2C%22polb_fee%22%2C%22arx_address%22%2C%22pola_arx_channel%22%2C%22polb_arx_channel%22%2C%22snap2_hostname%22%2C%22pola_digitizer_channel%22%2C%22polb_digitizer_channel%22%5D) (lwacalimhead:5007) (table of mapping in System Health Dashboard) |
 [LWASNAP](http://greghell.github.io/LWASNAP/) |
 
 
