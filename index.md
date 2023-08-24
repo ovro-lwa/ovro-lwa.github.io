@@ -22,7 +22,7 @@ Admin or defunct apps:
 
 ### Guides and tutorials
 
-Observing tutorials | [Troubleshooting guide](https://github.com/ovro-lwa/lwa-issues/wiki/Troubleshooting-Guide-(what-if...)) | [calim-ops wiki](https://github.com/ovro-lwa/calim-ops/wiki) |
+[Observing tutorials](https://caltech.sharepoint.com/sites/ovro/projects/SitePages/lwa.aspx) | [Troubleshooting guide](https://github.com/ovro-lwa/lwa-issues/wiki/Troubleshooting-Guide-(what-if...)) | [calim-ops wiki](https://github.com/ovro-lwa/calim-ops/wiki) |
 
 ### Subsystems and architecture (To do)
 
