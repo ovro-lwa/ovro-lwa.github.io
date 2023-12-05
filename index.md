@@ -6,11 +6,12 @@ Set up ssh tunnels to use web apps (ssh server/port tunnel shown in parentheses)
 
 Operations and M&C apps:
 
-[Web UI](http://localhost:9090) (webserveruiservice:9090) |
 [Grafana](http://localhost:3000) (grafana:3000) |
-[System Health Dashboard](http://localhost:5006/LWA_dashboard) (lwacalim10:5006) |
-[Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 [Logs](http://localhost:5601/app/discover) (lwacalim10:5601) |
+[System Health Dashboard](http://localhost:5006/LWA_dashboard) (lwacalim10:5006) |
+[Observing State](http://localhost:8082) (lwacalim10:8082) |
+[Web UI](http://localhost:9090) (webserveruiservice:9090) |
+[Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 
 Admin or defunct apps:
 
