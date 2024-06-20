@@ -1,0 +1,83 @@
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<div style='float left;'>
+<iframe name='myiframe' id='myiframe' width='1400px' height='900px' src="http://sky.esa.int"></iframe>
+</div>
+
+<script>
+   var msg_func_input = function(id){
+      var cmd = document.getElementById(id).value;
+      var ra = parseFloat(cmd.split(',')[0]);
+      var dec = parseFloat(cmd.split(',')[1]);
+      var skyObjectList = [];
+   
+      skyObjectList.push({
+               name: 'source name 1',
+               id: 1,
+               ra: ra.toString(),
+               dec: dec.toString()
+            });
+   
+      var overlaySet = {
+            type: 'SourceListOverlay',
+            overlayName: 'test catalogue name',
+            cooframe: 'J2000',
+            color: '#ee2345',
+            lineWidth: 10,
+            skyObjectList: skyObjectList
+         };
+   
+      var cmd = {
+         event: 'overlayCatalogueWithDetails',
+         content: {
+            overlaySet: overlaySet
+         }
+      };
+   
+      var esaskyFrame = document.getElementById("myiframe");
+      console.log(cmd);
+      esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
+   }
+   
+   window.addEventListener("message", function(e){
+      var data = e.data;
+      console.log(data);
+   });
+
+   var esaskyFrame = document.getElementById("myiframe");
+   esaskyFrame.addEventListener("load", function() {
+      var cmd = {
+         event: 'addHipsWithParams',
+         content: {
+            hips: {
+               name: 'OVRO-LWA',
+               id: 'OVRO-LWA',
+               url: 'https://relay.deepsynoptic.org/data/031-dirty-map-peeled-all.fitsHiPS/',
+               cooframe: 'J2000',
+               maxnorder: '11',
+               imgformat: 'png'
+            }
+         }
+      };
+
+      setTimeout(function() {
+         esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
+      }, 5000);
+
+   });
+</script>
+   
+   <p>
+      <input id="messageinput" style="width:30%;" type="text" value="11.68470,41.36875">
+      <button onclick="msg_func_input('messageinput')" type="button">Load in ESASky</button>
+   </p>
+
+</body>
+
+</html>
