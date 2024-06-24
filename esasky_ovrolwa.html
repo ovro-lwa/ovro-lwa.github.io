@@ -71,7 +71,9 @@
       }, 3000);
 
        var cmd = {event: 'setFov', content: {fov:'30'}};
-       esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
+       setTimeout(function() {
+	   esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
+       }, 1000);
 
    });
 </script>

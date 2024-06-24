@@ -13,6 +13,9 @@ Operations and M&C apps:
 [Web UI](http://localhost:9090) (webserveruiservice:9090) |
 [Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 
+Data:
+[ESA Sky](http://ovro-lwa.github.io/esasky_ovrolwa.html) |
+
 Admin or defunct apps:
 
 [MAAS](http://localhost:5240) (lxdlwamaas:5240) |
