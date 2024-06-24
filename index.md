@@ -14,7 +14,7 @@ Operations and M&C apps:
 [Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 
 Data:
-[ESA Sky](http://ovro-lwa.github.io/esasky_ovrolwa.html) |
+| [ESA Sky](http://ovro-lwa.github.io/esasky_ovrolwa.html) |
 
 Admin or defunct apps:
 
