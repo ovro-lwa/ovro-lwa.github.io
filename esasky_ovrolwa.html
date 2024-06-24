@@ -52,31 +52,34 @@
 
    var esaskyFrame = document.getElementById("myiframe");
    esaskyFrame.addEventListener("load", function() {
-      var cmd = {
-         event: 'addHipsWithParams',
-         content: {
-            hips: {
-               name: 'OVRO-LWA',
-               id: 'OVRO-LWA',
-               url: 'https://relay.deepsynoptic.org/data/031-dirty-map-peeled-all.fitsHiPS/',
-               cooframe: 'J2000',
-               maxnorder: '11',
-               imgformat: 'png'
+      // Assuming 'esasky_lwa_example.json' is in the same directory as your HTML file
+      const jsonFilePath = 'https://relay.deepsynoptic.org/data/esasky_lwa_example.json';
+
+      fetch(jsonFilePath)
+        .then(response => {
+          // Check if the request was successful
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Handle the parsed JSON data
+          cmd_restore = {
+            event: 'restoreState',
+            content: {
+              state: data
             }
-         }
-      };
+          };
+        })
+        .catch(error => {
+          // Handle any errors
+          console.error('There was a problem with your fetch operation:', error);
+        });
 
       setTimeout(function() {
-         esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
+         esaskyFrame.contentWindow.postMessage(cmd_restore, 'https://sky.esa.int');
       }, 1000);
-
-       setTimeout(function() {
-	   var cmd = {event: 'setFov', content: {fov:'180'}};
-	   esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
-	   var cmd = {event: 'goToRaDec', content: {ra: '0.', dec: '90'}};
-	   esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
-       }, 1000);
-
    });
 </script>
    
