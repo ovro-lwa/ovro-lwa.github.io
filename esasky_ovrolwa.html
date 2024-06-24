@@ -7,7 +7,7 @@
 <body>
 
 <div style='float left;'>
-<iframe name='myiframe' id='myiframe' width='1400px' height='1200px' src="https://sky.esa.int&fov=30"></iframe>
+<iframe name='myiframe' id='myiframe' width='1400px' height='1200px' src="https://sky.esa.int"></iframe>
 </div>
 
 <script>
@@ -68,7 +68,10 @@
 
       setTimeout(function() {
          esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
-      }, 5000);
+      }, 3000);
+
+       var cmd = {event: 'setFov', content: {fov:'30'}};
+       esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
 
    });
 </script>
