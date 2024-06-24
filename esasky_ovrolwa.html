@@ -68,10 +68,12 @@
 
       setTimeout(function() {
          esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
-      }, 2000);
+      }, 1000);
 
        setTimeout(function() {
 	   var cmd = {event: 'setFov', content: {fov:'180'}};
+	   esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
+	   var cmd = {event: 'goToRaDec', content: {ra: '0.', dec: '90'}};
 	   esaskyFrame.contentWindow.postMessage(cmd, 'https://sky.esa.int');
        }, 1000);
 
