@@ -14,6 +14,7 @@ Monitor and control:
 
 Data:
 
+[Solar Observation Preview](https://ovsa.njit.edu/lwa/) |
 [ESA Sky](http://ovro-lwa.github.io/esasky_ovrolwa.html) |
 [Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 
@@ -21,7 +22,6 @@ Admin or defunct apps:
 
 [MAAS](http://localhost:5240) (lxdlwamaas:5240) |
 [LWASNAP](http://greghell.github.io/LWASNAP/) |
-
 
 ## Documentation
 
