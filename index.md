@@ -7,10 +7,9 @@ Set up ssh tunnels to use web apps (ssh server/port tunnel shown in parentheses)
 Monitor and control:
 
 [Grafana](http://localhost:3000) (grafana:3000) |
-[Logs](http://localhost:5601/app/discover) (lwacalim10:5601) |
 [System Health Dashboard](http://localhost:5006/LWA_dashboard) (lwacalim10:5006) |
 [Observing State](http://localhost:8082) (lwacalim10:8082) |
-[Web UI](http://localhost:9090) (webserveruiservice:9090) |
+[Rice QA](http://obelix.rice.edu/~ai14/OVRO_LWA/) (http://obelix.rice.edu/~ai14/OVRO_LWA/) |
 
 Data:
 
@@ -22,6 +21,8 @@ Admin or defunct apps:
 
 [MAAS](http://localhost:5240) (lxdlwamaas:5240) |
 [LWASNAP](http://greghell.github.io/LWASNAP/) |
+[Logs](http://localhost:5601/app/discover) (lwacalim10:5601) |
+[Web UI](http://localhost:9090) (webserveruiservice:9090) |
 
 ## Documentation
 
