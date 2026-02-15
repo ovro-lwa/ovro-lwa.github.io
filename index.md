@@ -1,6 +1,6 @@
 # OVRO-LWA Software
 
-The OVRO-LWA is a radio interferometer located in the Owens Valley at the Owens Valley Radio Observatory (OVRO). The array is operated by staff at OVRO and remotely by staff at Caltech and OVRO-LWA collaboration members. Documentation and web apps for internal users are linked from ovro-lwa.github.io.
+The OVRO-LWA is a radio interferometer located in the Owens Valley at the Owens Valley Radio Observatory (OVRO). This page lists documentation and web apps for internal users.
 
 ## Web Apps
 
