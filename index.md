@@ -16,6 +16,7 @@ Monitor and control:
 Data:
 
 [Solar Observation Preview](https://ovsa.njit.edu/lwa/) |
+[Voltage Beam Triggered Products](http://localhost:8082/pipeline-events)
 [ESA Sky](http://ovro-lwa.github.io/esasky_ovrolwa.html) |
 [Low-Freq Sky](http://localhost:8081) (lwacalim10:8081) |
 
